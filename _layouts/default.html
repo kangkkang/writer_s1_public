@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>{% if page.title and page.title != site.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#f8f5ef; --fg:#26231f; --muted:#7a7266; --rule:#ddd5c8; --link:#6b4f2a; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#1b1a18; --fg:#e6e1d8; --muted:#9b9387; --rule:#3a3631; --link:#d6b27c; }
+  }
+  html { background:var(--bg); }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font-family:"Noto Serif KR", serif; font-size:18px; line-height:1.9;
+         word-break:keep-all; overflow-wrap:break-word; }
+  main { max-width:36em; margin:0 auto; padding:2.5em 16px 4em; }
+  header.site { max-width:36em; margin:0 auto; padding:1.2em 16px 0; font-size:.9em; }
+  header.site a { color:var(--muted); text-decoration:none; }
+  h1 { font-size:1.5em; font-weight:600; line-height:1.4; margin:2.2em 0 1.4em; }
+  main > h1:first-child { margin-top:.6em; }
+  p { margin:0 0 1.1em; }
+  blockquote { margin:2em 0 3em; padding:0 0 0 1.1em; border-left:2px solid var(--rule); color:var(--muted); }
+  hr { border:0; text-align:center; margin:2.4em 0; }
+  hr::before { content:"· · ·"; color:var(--muted); letter-spacing:.4em; }
+  a { color:var(--link); }
+  ul.toc { list-style:none; padding:0; }
+  ul.toc li { margin:.35em 0; }
+  nav.chapters { display:flex; justify-content:space-between; gap:1em; max-width:36em;
+                 margin:0 auto; padding:1.5em 16px 3em; border-top:1px solid var(--rule); font-size:.95em; }
+  nav.chapters a { text-decoration:none; }
+</style>
+</head>
+<body>
+<header class="site"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></header>
+<main>
+{{ content }}
+</main>
+{% if page.path contains 'vol1/' %}
+  {% assign chs = site.pages | where_exp: "p", "p.path contains 'vol1/'" | sort: "path" %}
+  {% assign cur = 0 %}
+  {% for p in chs %}{% if p.path == page.path %}{% assign cur = forloop.index0 %}{% endif %}{% endfor %}
+  {% assign prev_i = cur | minus: 1 %}{% assign next_i = cur | plus: 1 %}
+<nav class="chapters">
+  <span>{% if cur > 0 %}<a href="{{ chs[prev_i].url | relative_url }}">← 이전 장</a>{% endif %}</span>
+  <a href="{{ '/' | relative_url }}">목차</a>
+  <span>{% if next_i < chs.size %}<a href="{{ chs[next_i].url | relative_url }}">다음 장 →</a>{% endif %}</span>
+</nav>
+{% endif %}
+</body>
+</html>
