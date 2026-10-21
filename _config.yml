@@ -1,6 +1,6 @@
 # 공개 저장소(writer_s1_public)를 GitHub Pages로 읽게 하는 설정.
 # 이 폴더는 동기화 액션이 원고 사본(public_out)에 덧붙인다 — 공개 저장소에서 직접 고치면 다음 동기화 때 지워진다.
-title: 차원 붕괴
+title: '00:00:01'
 lang: ko
 markdown: kramdown
 kramdown:
