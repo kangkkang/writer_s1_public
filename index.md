@@ -34,4 +34,5 @@ title: '00:00:01'
   <li><a href="vol1/025.html">25. 포위망</a></li>
   <li><a href="vol1/026.html">26. 가기로 한다</a></li>
   <li><a href="vol1/027.html">27. 만남은 도주였다</a></li>
+  <li><a href="vol1/028.html">28. 두 반쪽</a></li>
 </ul>
