@@ -42,4 +42,5 @@ title: '00:00:01'
   <li><a href="vol1/033.html">33. 외곽 정비 구역</a></li>
   <li><a href="vol1/034.html">34. 초기화 직전</a></li>
   <li><a href="vol1/035.html">35. 각진 방</a></li>
+  <li><a href="vol1/036.html">36. 그날의 기록</a></li>
 </ul>
