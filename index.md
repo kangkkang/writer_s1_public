@@ -13,7 +13,7 @@ title: '00:00:01'
   <li><a href="vol1/004.html">4. 마지막 뇌파</a></li>
   <li><a href="vol1/005.html">5. 소식 없음</a></li>
   <li><a href="vol1/006.html">6. 같은 박자의 사람들</a></li>
-  <li><a href="vol1/007.html">7. 이름이 닿는 곳</a></li>
+  <li><a href="vol1/007.html">7. 신분 노출</a></li>
   <li><a href="vol1/008.html">8. 빈자리</a></li>
   <li><a href="vol1/009.html">9. 거꾸로 가는 표</a></li>
   <li><a href="vol1/010.html">10. 열 번째 층</a></li>
