@@ -36,4 +36,5 @@ title: '00:00:01'
   <li><a href="vol1/027.html">27. 만남은 도주였다</a></li>
   <li><a href="vol1/028.html">28. 두 반쪽</a></li>
   <li><a href="vol1/029.html">29. 그냥 끄면 안 되나</a></li>
+  <li><a href="vol1/030.html">30. 스승</a></li>
 </ul>
