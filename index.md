@@ -37,4 +37,5 @@ title: '00:00:01'
   <li><a href="vol1/028.html">28. 두 반쪽</a></li>
   <li><a href="vol1/029.html">29. 그냥 끄면 안 되나</a></li>
   <li><a href="vol1/030.html">30. 스승</a></li>
+  <li><a href="vol1/031.html">31. 얼굴 없는 사람들</a></li>
 </ul>
