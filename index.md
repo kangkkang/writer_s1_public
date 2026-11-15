@@ -22,7 +22,7 @@ title: '00:00:01'
   <li><a href="vol1/013.html">13. 목 뒤의 흔적</a></li>
   <li><a href="vol1/014.html">14. 바닥</a></li>
   <li><a href="vol1/015.html">15. 사라진 조회자</a></li>
-  <li><a href="vol1/016.html">16. 논문 수정란</a></li>
+  <li><a href="vol1/016.html">16. 논문 정정란</a></li>
   <li><a href="vol1/017.html">17. 소리 없는 실종</a></li>
   <li><a href="vol1/018.html">18. 넉 달</a></li>
   <li><a href="vol1/019.html">19. 첫 기사</a></li>
